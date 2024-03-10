@@ -14,6 +14,7 @@ export const useProfile = () => {
   const userRef = doc(db, 'users', user.uid);
 
   const [isLoading, setIsLoading] = useState(false);
+  
   const [error, setError] = useState(false);
 
   const editProfile = async ({ name, lastName, phoneNumber = null }) => {
