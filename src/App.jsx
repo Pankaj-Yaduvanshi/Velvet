@@ -20,6 +20,10 @@ import {
   ProductPage,
   CartPage,
   CheckoutPage,
+  AdminPage,
+  AdminCollections,
+  AdminAddProduct,
+  AdminEditProduct,
 } from './components/pages';
 
 import { Loader } from './components/common';
@@ -78,7 +82,7 @@ const App = () => {
               <Route path="account/signup" element={<SignUpPage />} />
             </Route>
 
-            {/* <Route element={<ProtectedRoutes needAdmin={true} />}>
+            <Route element={<ProtectedRoutes needAdmin={true} />}>
               <Route path="admin" element={<AdminPage />} />
               <Route path="admin/products" element={<AdminCollections />} />
               <Route path="admin/products/add" element={<AdminAddProduct />} />
@@ -86,8 +90,7 @@ const App = () => {
                 path="admin/products/:productId"
                 element={<AdminEditProduct />}
               />
-            </Route> */}
-
+            </Route>
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>

@@ -21,20 +21,11 @@ const SignUpPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("inside signUp");
     await signUp({
-      
-      method: "POST",
-              body: JSON.stringify({
-                name: nameInput.current.value,
-                lastName: lastNameInput.current.value,
-                email: emailInput.current.value,
-                password: passwordInput.current.value,
-              }),
-      // name: nameInput.current.value,
-      // lastName: lastNameInput.current.value,
-      // email: emailInput.current.value,
-      // password: passwordInput.current.value,
+      name: nameInput.current.value,
+      lastName: lastNameInput.current.value,
+      email: emailInput.current.value,
+      password: passwordInput.current.value,
     });
   };
 

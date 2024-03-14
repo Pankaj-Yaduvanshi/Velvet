@@ -3,7 +3,7 @@ import { Button, MediaContainer } from 'components/common';
 import styles from './index.module.scss';
 
 const CollectionCard = ({ id, image, title, text, url }) => {
-  const isAlt = title === 'hoodies';
+  const isAlt = title === 'spices';
 
   return (
     <div className={styles.card}>

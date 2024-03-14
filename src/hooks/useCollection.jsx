@@ -38,7 +38,6 @@ export const useCollection = () => {
       }
 
       let productsQuery;
-
       let constraints = [orderBy(sortBy.field, sortBy.direction)];
 
       if (sortBy.field === 'createdAt') {

@@ -127,21 +127,21 @@ const Navbar = ({ toggleSideNav, openCartModal }) => {
         </Link>
         <ul className={styles.links}>
           <li>
-            <NavLink className={styles.link} to="/collections/t-shirts">
-              T-shirts
+            <NavLink className={styles.link} to="/collections/cereals">
+              Cereals
             </NavLink>
           </li>
           <li>
             <NavLink
               className={styles.link}
-              to="/collections/hoodies-sweatshirts"
+              to="/collections/spices-sweatshirts"
             >
-              Hoodies
+              Spices
             </NavLink>
           </li>
           <li>
-            <NavLink className={styles.link} to="/collections/accessories">
-              Accessories
+            <NavLink className={styles.link} to="/collections/others">
+              Others
             </NavLink>
           </li>
         </ul>

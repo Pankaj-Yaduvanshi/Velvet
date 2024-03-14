@@ -27,11 +27,10 @@ export const useAuth = () => {
   const signUp = async ({ name, lastName, email, password }) => {
     setError(null);
     setIsLoading(true);
-    setDefaultValue({ name, lastName, email });
+    setDefaultValue({ name, lastName, email, password });
 
     try {
       const credential = EmailAuthProvider.credential(email, password);
-
       const userCredential = await linkWithCredential(
         auth.currentUser,
         credential
@@ -40,7 +39,6 @@ export const useAuth = () => {
       // if (!userCredential) {
       //   throw new Error('No se pudo crear la cuenta');
       // }
-
       const user = userCredential.user;
 
       const userData = {
@@ -51,10 +49,9 @@ export const useAuth = () => {
         addresses: [],
         isVerified: true,
       };
-
       await setDoc(doc(db, 'users', user.uid), userData);
-
-      dispatchAuthAction({ type: 'LOGIN', payload: { user, ...userData } });
+      // sendToast({ content: { message: 'Account created successfully!' } });
+      // dispatchAuthAction({ type: 'LOGIN', payload: { user, ...userData } });
     } catch (err) {
       console.error(err);
       setError(handleError(err));
@@ -75,10 +72,6 @@ export const useAuth = () => {
       const anonymousCartDoc = await getDoc(anonymousCartRef);
 
       await signInWithEmailAndPassword(auth, email, password);
-
-      // if (!userCredential) {
-      //   throw Error('Error');
-      // }
 
       if (anonymousCartDoc.exists()) {
         deleteDoc(doc(db, 'carts', anonymousUser.uid));

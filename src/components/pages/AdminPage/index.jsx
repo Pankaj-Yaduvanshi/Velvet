@@ -1,13 +1,11 @@
 import { useState } from 'react';
-
 import { useSeed } from 'hooks/useSeed';
-
+import { Link } from 'react-router-dom';
 import { ConfirmModal, Loader } from 'components/common';
 import styles from './index.module.scss';
 
 const AdminPage = () => {
   const { uploadProducts, isLoading, error } = useSeed();
-
   const [needConfirm, setNeedConfirm] = useState(false);
 
   const handleConfirm = async () => {
@@ -30,11 +28,11 @@ const AdminPage = () => {
           <h1>Panel</h1>
           <div className={styles.options_wrapper}>
             <Link to="/admin/products" className={styles.option}>
-            <div>Products</div>
-          </Link>
-          <Link to="/admin/products/add" className={styles.option}>
-            <div>Add Product</div>
-          </Link>
+              <div>Products</div>
+            </Link>
+            <Link to="/admin/products/add" className={styles.option}>
+              <div>Add Product</div>
+            </Link>
             <div
               onClick={() => setNeedConfirm(true)}
               className={`${styles.option} ${styles.seed}`}

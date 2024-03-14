@@ -12,9 +12,9 @@ import styles from './index.module.scss';
 
 const validSlugs = [
   'products',
-  't-shirts',
-  'hoodies-sweatshirts',
-  'accessories',
+  'cereals',
+  'spices-sweatshirts',
+  'others',
 ];
 
 const CollectionPage = () => {
