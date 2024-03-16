@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import {
   FaInstagram,
-  FaTwitterSquare,
+  FaWhatsapp,
   FaTiktok,
   FaFacebookF,
   FaYoutube,
@@ -67,23 +67,20 @@ const Footer = () => {
         <div className={styles.socials_wrapper}>
           {isBigScreen && <Newsletter />}
           <div className={styles.socials}>
+           <a href="https://wa.me/c/919270191605" target="_blank" rel="noreferrer">
+              <FaWhatsapp />
+            </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/velvetskypvt/?hl=en"
               target="_blank"
               rel="noreferrer"
             >
               <FaInstagram />
             </a>
-            <a href="https://tiktok.com" target="_blank" rel="noreferrer">
-              <FaTiktok />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <FaTwitterSquare />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61551428757057" target="_blank" rel="noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer">
+            <a href="https://www.youtube.com/channel/UCmwEfhAum5N08r07CYHus2Q" target="_blank" rel="noreferrer">
               <FaYoutube />
             </a>
           </div>

@@ -1,0 +1,123 @@
+[
+  {
+    "collection": "accessories",
+    "fit": "relaxed",
+    "description": "adjustable cap",
+    "model": "baires",
+    "price": 22,
+    "slug": "baires-dad-hat",
+    "type": "dad hat",
+    "variants": [
+      {
+        "color": "white",
+        "images": [
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          },
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          }
+        ],
+        "variantPrice": 22,
+        "skus": [
+          {
+            "order": null,
+            "quantity": 123,
+            "size": null,
+            "value": "bairesdadhatwhite"
+          }
+        ]
+      },
+      {
+        "color": "black",
+        "images": [
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          },
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          }
+        ],
+        "variantPrice": 18,
+        "skus": [
+          {
+            "order": null,
+            "quantity": 123,
+            "size": null,
+            "value": "bairesdadhatblack"
+          }
+        ]
+      },
+      {
+        "color": "grey",
+        "images": [
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          },
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          }
+        ],
+        "variantPrice": 18,
+        "skus": [
+          {
+            "order": null,
+            "quantity": 123,
+            "size": null,
+            "value": "bairesdadhatgrey"
+          }
+        ]
+      },
+      {
+        "color": "tan",
+        "images": [
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          },
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          }
+        ],
+        "variantPrice": 18,
+        "skus": [
+          {
+            "order": null,
+            "quantity": 123,
+            "size": null,
+            "value": "bairesdadhattan"
+          }
+        ]
+      },
+      {
+        "color": "purple",
+        "images": [
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          },
+          {
+            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
+            "src": "Add corresponging image link from storage"
+          }
+        ],
+        "variantPrice": 18,
+        "skus": [
+          {
+            "order": null,
+            "quantity": 123,
+            "size": null,
+            "value": "bairesdadhatpurple"
+          }
+        ]
+      }
+    ]
+  }
+]

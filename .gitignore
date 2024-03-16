@@ -8,9 +8,6 @@ firebase-config.jsx
 .firebase
 .firebaserc
 
-# data
-/src/data/products.json
-
 # testing
 /coverage
 
