@@ -1,6 +1,6 @@
-import cerealCollection from 'assets/images/collection-remeras-top.jpg';
-import spicesCollection from 'assets/images/collection-buzos-top.jpg';
-import othersCollection from 'assets/images/collection-accesorios-bottom.jpg';
+import cerealCollection from 'assets/images/collection-spices-top.jpg';
+import spicesCollection from 'assets/images/collection-cereals-top.jpg';
+import othersCollection from 'assets/images/collection-others-bottom.jpg';
 
 export const COLLECTIONS = [
   {

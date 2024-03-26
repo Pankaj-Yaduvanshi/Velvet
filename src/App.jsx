@@ -45,7 +45,7 @@ const App = () => {
     <>
       <div className="fonts_license">
         Font made from{' '}
-        <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed
+        <a href="http://www.onlinewebfonts.com">Online Web Fonts</a>is licensed
         by CC BY 3.0
       </div>
       {(!authIsReady || !cartIsReady) && <Loader />}

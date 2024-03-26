@@ -36,9 +36,9 @@ export const useAuth = () => {
         credential
       );
 
-      // if (!userCredential) {
-      //   throw new Error('No se pudo crear la cuenta');
-      // }
+      if (!userCredential) {
+        throw new Error('Try Again!!');
+      }
       const user = userCredential.user;
 
       const userData = {
@@ -50,8 +50,7 @@ export const useAuth = () => {
         isVerified: true,
       };
       await setDoc(doc(db, 'users', user.uid), userData);
-      // sendToast({ content: { message: 'Account created successfully!' } });
-      // dispatchAuthAction({ type: 'LOGIN', payload: { user, ...userData } });
+      dispatchAuthAction({ type: 'LOGIN', payload: { user, ...userData } });
     } catch (err) {
       console.error(err);
       setError(handleError(err));

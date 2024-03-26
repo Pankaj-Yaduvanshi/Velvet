@@ -261,7 +261,7 @@ const ProductCard = ({
           </ul>
         </div>
 
-        {/* {isAdmin && (
+        {isAdmin && (
           <div className={styles.admin_buttons_wrapper}>
             <Button className={styles.edit} to={`/admin/products/${productId}`}>
               Edit
@@ -279,7 +279,7 @@ const ProductCard = ({
               Delete
             </Button>
           </div>
-        )} */}
+        )} 
       </div>
     </>
   );

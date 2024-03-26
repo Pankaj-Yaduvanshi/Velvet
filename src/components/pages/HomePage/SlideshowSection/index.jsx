@@ -36,7 +36,7 @@ const SlideshowSection = () => {
           {showContent && (
             <div className={styles.content_wrapper}>
               <p className={styles.content_title}>Drop #01</p>
-              <p className={styles.content_title}>De gira</p>
+              <p className={styles.content_title}>On Tour</p>
               <p className={styles.content_subtitle}>
                 Cereals, spices & more
               </p>

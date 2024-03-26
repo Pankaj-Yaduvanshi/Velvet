@@ -10,10 +10,8 @@ import styles from './index.module.scss';
 
 const SignUpPage = () => {
   const { state: routerState } = useLocation();
-
   const { signUp, isLoading, error, defaultValue } = useAuth();
   const { sendToast } = useToast();
-
   const nameInput = useRef();
   const lastNameInput = useRef();
   const emailInput = useRef();

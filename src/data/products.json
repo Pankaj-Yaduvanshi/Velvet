@@ -1,6 +1,6 @@
 [
   {
-    "collection": "accessories",
+    "collection": "spices",
     "fit": "relaxed",
     "description": "adjustable cap",
     "model": "baires",
@@ -12,12 +12,8 @@
         "color": "white",
         "images": [
           {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          },
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
+            "id": "A754aa45d-dd9d-4485-bc02-cbd3c8272640",
+            "src": "https://firebasestorage.googleapis.com/v0/b/velvetsky-pvt.appspot.com/o/product-images%2F754aa45d-dd9d-4485-bc02-cbd3c8272640%2FA%20Guide%20to%20Cooking%20with%20Whole%20Grains%20%26%20Baking%20with%20Whole%20Grain%20Flours.jfif?alt=media&token=03936d64-545f-4223-bf4a-0a80bf7b8e42"
           }
         ],
         "variantPrice": 22,
@@ -29,92 +25,33 @@
             "value": "bairesdadhatwhite"
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "collection": "cereals",
+    "fit": "relaxed",
+    "description": "adjustable cap",
+    "model": "baires",
+    "price": 22,
+    "slug": "baires-dad-hat",
+    "type": "dad hat",
+    "variants": [
       {
-        "color": "black",
-        "images": [
+        "color": "white",
+        "images": [          
           {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          },
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
+            "id": "01990d4e-4170-4ccc-8e22-ca2297811d82",
+            "src": "https://firebasestorage.googleapis.com/v0/b/velvetsky-pvt.appspot.com/o/product-images%2F01990d4e-4170-4ccc-8e22-ca2297811d82%2FAdobeStock_195950435_Preview.jpeg?alt=media&token=82d65bd3-c4a7-454c-b37b-eafcbfe1739c"
           }
         ],
-        "variantPrice": 18,
+        "variantPrice": 22,
         "skus": [
           {
             "order": null,
             "quantity": 123,
             "size": null,
-            "value": "bairesdadhatblack"
-          }
-        ]
-      },
-      {
-        "color": "grey",
-        "images": [
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          },
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          }
-        ],
-        "variantPrice": 18,
-        "skus": [
-          {
-            "order": null,
-            "quantity": 123,
-            "size": null,
-            "value": "bairesdadhatgrey"
-          }
-        ]
-      },
-      {
-        "color": "tan",
-        "images": [
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          },
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          }
-        ],
-        "variantPrice": 18,
-        "skus": [
-          {
-            "order": null,
-            "quantity": 123,
-            "size": null,
-            "value": "bairesdadhattan"
-          }
-        ]
-      },
-      {
-        "color": "purple",
-        "images": [
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          },
-          {
-            "id": "Add corresponding image id (id used as folder name where image is found in storage)",
-            "src": "Add corresponging image link from storage"
-          }
-        ],
-        "variantPrice": 18,
-        "skus": [
-          {
-            "order": null,
-            "quantity": 123,
-            "size": null,
-            "value": "bairesdadhatpurple"
+            "value": "bairesdadhatwhite"
           }
         ]
       }

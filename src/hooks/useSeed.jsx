@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import { collection, doc, writeBatch } from 'firebase/firestore';
-
 import { db } from 'db/config';
-
 import moment from 'moment';
-
 import products from 'data/products.json';
 
 export const useSeed = () => {
@@ -14,11 +11,9 @@ export const useSeed = () => {
   const uploadProducts = async () => {
     setError(null);
     setIsLoading(true);
-
     try {
       const batch = writeBatch(db);
       const productsRef = collection(db, 'products');
-
       for (const product of products) {
         const newProductRef = doc(productsRef);
         batch.set(newProductRef, {
@@ -60,7 +55,6 @@ export const useSeed = () => {
           }
         }
       }
-
       await batch.commit();
       setIsLoading(false);
     } catch (err) {
@@ -69,6 +63,5 @@ export const useSeed = () => {
       setIsLoading(false);
     }
   };
-
   return { uploadProducts, isLoading, error };
 };

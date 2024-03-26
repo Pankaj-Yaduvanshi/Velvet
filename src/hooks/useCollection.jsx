@@ -30,16 +30,14 @@ export const useCollection = () => {
     sortBy = { field: 'createdAt', direction: 'asc' },
   }) => {
     setError(null);
-
     try {
       if (isNewQuery) {
         latestDoc.current = 0;
         setHasMore(true);
       }
-
+      
       let productsQuery;
       let constraints = [orderBy(sortBy.field, sortBy.direction)];
-
       if (sortBy.field === 'createdAt') {
         constraints.unshift(orderBy('collection'));
       }

@@ -4,9 +4,7 @@ import { useCollection } from 'hooks/useCollection';
 import { useAdmin } from 'hooks/useAdmin';
 
 import { Loader, CenterModal, ConfirmModal } from 'components/common';
-
-// import ProductCard from 'components/pages/collection/ProductCard';
-
+import { ProductCard } from '../../common';
 import styles from './index.module.scss';
 
 const AdminCollections = () => {
@@ -64,6 +62,7 @@ const AdminCollections = () => {
           />
         )}
       </CenterModal>
+      
       {(!variants || isLoading) && <Loader />}
       {variants && (
         <section>

@@ -40,12 +40,12 @@ const NavDrawerContent = ({ toggleSideNav }) => {
               onClick={toggleSideNav}
               className={styles.link}
             >
-              T-Shirts
+              Cereals
             </Link>
           </li>
           <li>
             <Link
-              to="/collections/spices-sweatshirts"
+              to="/collections/spices"
               onClick={toggleSideNav}
               className={styles.link}
             >

@@ -134,7 +134,7 @@ const Navbar = ({ toggleSideNav, openCartModal }) => {
           <li>
             <NavLink
               className={styles.link}
-              to="/collections/spices-sweatshirts"
+              to="/collections/spices"
             >
               Spices
             </NavLink>
