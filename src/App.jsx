@@ -25,7 +25,6 @@ import {
   AdminAddProduct,
   AdminEditProduct,
 } from './components/pages';
-
 import { Loader } from './components/common';
 
 import './App.scss';

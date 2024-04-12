@@ -10,7 +10,6 @@ import Footer from './Footer';
 const Layout = () => {
   const location = useLocation();
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
-
   const pathname = location.pathname.split('/');
   const isCheckout = pathname.includes('checkout');
 
@@ -33,5 +32,4 @@ const Layout = () => {
     </>
   );
 };
-
 export default Layout;

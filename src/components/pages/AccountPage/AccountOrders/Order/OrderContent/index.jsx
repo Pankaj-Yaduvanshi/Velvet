@@ -93,15 +93,15 @@ const OrderContent = ({
         <ul>
           <li>
             <span>Subtotal</span>
-            <span>$ {formatPrice(subtotal)}</span>
+            <span>₹{formatPrice(subtotal)}</span>
           </li>
           <li>
             <span>Shipping</span>
-            <span>$ {formatPrice(shippingCost)} </span>
+            <span>₹{formatPrice(shippingCost)} </span>
           </li>
           <li>
             <span>Total</span>
-            <span>$ {formatPrice(total)} </span>
+            <span>₹{formatPrice(total)} </span>
           </li>
         </ul>
       </div>

@@ -39,7 +39,7 @@ const Footer = () => {
                 <Link to="/">Help Center</Link>
               </li>
               <li>
-                <Link to="/">Contact Us</Link>
+                <Link to="/contactus">Contact Us</Link>
               </li>
               <li>
                 <Link to="/">Shipping Info</Link>
@@ -71,7 +71,7 @@ const Footer = () => {
               <FaWhatsapp />
             </a>
             <a
-              href="https://www.instagram.com/velvetskypvt/?hl=en"
+              href="https://www.instagram.com/AgroArpanpvt/?hl=en"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,11 +1,7 @@
 import { useReducer, useEffect } from 'react';
-
 import { onAuthStateChanged, signInAnonymously } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
-
-import { auth } from 'db/config';
-import { db } from 'db/config';
-
+import { auth, db } from 'db/config';
 import AuthContext from './auth-context';
 
 const initialState = {
@@ -88,7 +84,7 @@ const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState);
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, async (user) => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         const userRef = doc(db, 'users', user.uid);
         const userDoc = await getDoc(userRef);
@@ -110,7 +106,7 @@ const AuthProvider = ({ children }) => {
       }
     });
 
-    return () => unsub();
+    return () => unsubscribe();
   }, []);
 
   console.log('auth-context', state);
@@ -123,3 +119,4 @@ const AuthProvider = ({ children }) => {
 };
 
 export default AuthProvider;
+

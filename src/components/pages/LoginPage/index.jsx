@@ -68,7 +68,7 @@ const LoginPage = () => {
                   </button>
                 </form>
                 <p className={styles.no_account}>
-                  New to VelvetSky?{' '}
+                  New to AgroArpan?{' '}
                   <Link to="/account/signup" state={routerState}>
                     Create account
                   </Link>

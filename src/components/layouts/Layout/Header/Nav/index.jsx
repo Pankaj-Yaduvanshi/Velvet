@@ -72,7 +72,7 @@ const Navbar = ({ toggleSideNav, openCartModal }) => {
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/contactus">
               Contact Us
             </Link>
           </li>

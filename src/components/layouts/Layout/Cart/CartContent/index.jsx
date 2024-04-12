@@ -104,7 +104,7 @@ const CartContent = ({ closeCartModal, slides }) => {
           <div className={styles.footer_container}>
             <div className={styles.footer_wrapper}>
               <p>
-                <span>Total: ${addAllItemsPrice(items)} </span> |{' '}
+                <span>Total: ₹{addAllItemsPrice(items)} </span> |{' '}
                 {totalQuantity} {+totalQuantity > 1 ? 'items' : 'item'}
               </p>
               <div className={styles.buttons_wrapper}>
