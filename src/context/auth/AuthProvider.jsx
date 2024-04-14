@@ -105,8 +105,13 @@ const AuthProvider = ({ children }) => {
         await signInAnonymously(auth);
       }
     });
-
-    return () => unsubscribe();
+    // Sign out any authenticated user when component unmounts
+    return () => {
+      if (auth.currentUser) {
+        auth.signOut();
+      }
+      unsubscribe();
+    };
   }, []);
 
   console.log('auth-context', state);
